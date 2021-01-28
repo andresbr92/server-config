@@ -9,7 +9,8 @@ const User = require('./user.model')
 //////////
 require('./configs/passport.config')(app)
 require('./configs/mongoose.config')
-
+require('./configs/middleware.config')
+require('./configs/cloudinary.config')
 app.get('/', (req, res) => {
   res.send('Hello Worlquepasad!')
 })
